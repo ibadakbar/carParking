@@ -36,3 +36,38 @@
     transform: rotate(360deg);
   }
 }
+
+
+table {
+  width: 716px; /* 140px * 5 column + 16px scrollbar width */
+  border-spacing: 0;
+}
+
+tbody, thead tr { display: block; }
+
+tbody {
+  height: 200px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+tbody td, thead th {
+  width: 200px;
+}
+
+thead th:last-child {
+  width: 156px; /* 140px + 16px scrollbar width */
+}
+
+.btnMargin{
+  margin-left: 10px;
+}
+.red{
+  color: red;
+}
+.cardata{
+
+  justify-content: center;
+    display: flex;
+    margin-top: 14px;
+}
