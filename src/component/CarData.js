@@ -15,7 +15,7 @@ const CarData = () => {
     const dispatch = useDispatch()
     useEffect(() => {
         dispatch(getParkingCar())
-    }, [])
+    }, [dispatch])
 
 
     useEffect(() => {
@@ -76,7 +76,7 @@ const CarData = () => {
 
                                     <div class="form-group">
                                         <span class="form-label">Search Your Car</span>
-                                        <input class="form-control" onChange={(e) => filterData(e.target.value)} type="tel" placeholder="Search your car here" />
+                                        <input class="form-control" onChange={(e) => filterData(e.target.value)} type="text" placeholder="Search your car here" />
                                     </div>
 
                                     <table class="table table-dark">
